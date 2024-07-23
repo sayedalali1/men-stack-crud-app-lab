@@ -1,0 +1,11 @@
+const mongoose = require('mongoose')
+
+const quoteSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  price: {type: Number, required: true},
+//   available: {type: Boolean, required: true},
+  image: String,
+})
+
+const Quote = mongoose.model('Quote', quoteSchema)
+module.exports = Quote;

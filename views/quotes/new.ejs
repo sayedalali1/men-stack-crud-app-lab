@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Quote</title>
+</head>
+<body>
+
+    <a href="/"> HomePage </a>    
+    <a href="/quotes/new"> NEW QUOTE </a>   
+
+    <form action="/quotes" method="POST">
+        <div>
+            <label for="name">Quote Name </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" required />            
+        </div>
+        <input type="submit" value="Add Quote" />
+    </form>
+    <a href="/quotes"> Back to List </a>  
+</body>
+</html>
